@@ -32,8 +32,8 @@ function onGalleryItemClick(event) {
   }
 }
 
-function createMarkup(arr) {
-  return arr
+function createMarkup(array) {
+  return array
     .map(
       ({ preview, original, description }) => `<li class="gallery__item">
   <a class="gallery__link" href="${original}">
