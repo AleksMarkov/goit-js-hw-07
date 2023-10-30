@@ -21,6 +21,9 @@ function onGalleryItemClick(event) {
       onShow: () => {
         window.addEventListener("keydown", onEscPress);
       },
+      onClose: () => {
+        window.removeEventListener("keydown", onEscPress);
+      },
     }
   );
   instance.show();
